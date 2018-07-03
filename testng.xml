@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteName">
+	
+	<listeners>
+	        <listener class-name="com.crm.util.ExtentReporterNG" />        
+	</listeners>
+	
+	<test name="LoginTest" allow-return-values="true">
+		<classes>
+			<class name="com.crm.testcases.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="HomePageTest" allow-return-values="true">
+		<classes>
+			<class name="com.crm.testcases.HomePageTest" />
+		</classes>
+	</test>
+		<test name="ContactsPageTest" allow-return-values="true">
+		<classes>
+			<class name="com.crm.testcases.ContactsPageTest" />
+		</classes>
+	</test>
+	
+	
+	
+</suite>
+

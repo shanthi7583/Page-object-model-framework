@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteName]">
+  <listeners>
+    <listener class-name="com.crm.util.ExtentReporterNG"/>
+  </listeners>
+  <test name="HomePageTest(failed)">
+    <classes>
+      <class name="com.crm.testcases.ContactsPageTest">
+        <methods>
+          <include name="quit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crm.testcases.ContactsPageTest -->
+      <class name="com.crm.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="quit"/>
+          <include name="click"/>
+        </methods>
+      </class> <!-- com.crm.testcases.HomePageTest -->
+      <class name="com.crm.testcases.LoginTest">
+        <methods>
+          <include name="quit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crm.testcases.LoginTest -->
+    </classes>
+  </test> <!-- HomePageTest(failed) -->
+  <test name="ContactsPageTest(failed)">
+    <classes>
+      <class name="com.crm.testcases.ContactsPageTest">
+        <methods>
+          <include name="Newcontact"/>
+          <include name="quit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crm.testcases.ContactsPageTest -->
+      <class name="com.crm.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.crm.testcases.HomePageTest -->
+      <class name="com.crm.testcases.LoginTest">
+        <methods>
+          <include name="quit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crm.testcases.LoginTest -->
+    </classes>
+  </test> <!-- ContactsPageTest(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->
