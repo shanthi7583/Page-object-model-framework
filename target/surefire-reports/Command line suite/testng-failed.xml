@@ -5,7 +5,7 @@
     <classes>
       <class name="com.crm.testcases.ContactsPageTest">
         <methods>
-          <include name="quit"/>
+          <include name="Newcontact"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.crm.testcases.ContactsPageTest -->
