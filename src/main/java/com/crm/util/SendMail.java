@@ -27,7 +27,7 @@ public void SendMail() throws Exception
     {
     	Properties pro=new Properties();
 		try {
-			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"//src//test//java//com//Mobile_Framework//resources//pro.properties");
+			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//com//crm//config//config.properties");
 			pro.load(fs);
 			
 
