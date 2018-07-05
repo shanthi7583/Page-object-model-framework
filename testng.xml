@@ -22,6 +22,11 @@
 		</classes>
 	</test>
 	
+			<test name="SendMail" allow-return-values="true">
+		<classes>
+			<class name="com.crm.util.SendMail" />
+		</classes>
+	</test>
 	
 	
 </suite>

@@ -48,6 +48,9 @@ public class HomePage extends TestBase {
 	public ContactsPage clickonContacts()
 	{
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
+		driver.switchTo().frame("mainpanel");
+		Actions act=new Actions(driver);
+		act.moveToElement(contact).build().perform();
 		contact.click();
 		//newcontact.click();
 		return new ContactsPage();

@@ -41,7 +41,7 @@ public class HomePageTest extends TestBase{
 	@Test(priority=2)
 	public void click()
 	{
-		driver.manage().timeouts().pageLoadTimeout(2000, TimeUnit.SECONDS);
+		//driver.manage().timeouts().pageLoadTimeout(2000, TimeUnit.SECONDS);
 		homepage.clickonContacts();
 		
 	}

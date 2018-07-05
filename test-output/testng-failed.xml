@@ -6,12 +6,6 @@
   </listeners>
   <test name="HomePageTest(failed)">
     <classes>
-      <class name="com.crm.testcases.ContactsPageTest">
-        <methods>
-          <include name="quit"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.crm.testcases.ContactsPageTest -->
       <class name="com.crm.testcases.HomePageTest">
         <methods>
           <include name="setup"/>
@@ -19,6 +13,12 @@
           <include name="click"/>
         </methods>
       </class> <!-- com.crm.testcases.HomePageTest -->
+      <class name="com.crm.testcases.ContactsPageTest">
+        <methods>
+          <include name="quit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crm.testcases.ContactsPageTest -->
       <class name="com.crm.testcases.LoginTest">
         <methods>
           <include name="quit"/>
@@ -27,21 +27,25 @@
       </class> <!-- com.crm.testcases.LoginTest -->
     </classes>
   </test> <!-- HomePageTest(failed) -->
-  <test name="ContactsPageTest(failed)">
+  <test name="SendMail(failed)">
     <classes>
-      <class name="com.crm.testcases.ContactsPageTest">
+      <class name="com.crm.util.SendMail">
         <methods>
-          <include name="Newcontact"/>
-          <include name="quit"/>
-          <include name="setup"/>
+          <include name="SendMail"/>
         </methods>
-      </class> <!-- com.crm.testcases.ContactsPageTest -->
+      </class> <!-- com.crm.util.SendMail -->
       <class name="com.crm.testcases.HomePageTest">
         <methods>
           <include name="setup"/>
           <include name="quit"/>
         </methods>
       </class> <!-- com.crm.testcases.HomePageTest -->
+      <class name="com.crm.testcases.ContactsPageTest">
+        <methods>
+          <include name="quit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crm.testcases.ContactsPageTest -->
       <class name="com.crm.testcases.LoginTest">
         <methods>
           <include name="quit"/>
@@ -49,5 +53,5 @@
         </methods>
       </class> <!-- com.crm.testcases.LoginTest -->
     </classes>
-  </test> <!-- ContactsPageTest(failed) -->
+  </test> <!-- SendMail(failed) -->
 </suite> <!-- Failed suite [SuiteName] -->
