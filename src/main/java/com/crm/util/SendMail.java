@@ -19,25 +19,14 @@ import java.util.*;
  
 
 public class SendMail extends TestBase
-
 {
+	
 @Test
-public void SendMail() throws Exception
+public void SendMail()
 
     {
-    	Properties pro=new Properties();
-		try {
-			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//com//crm//config//config.properties");
-			pro.load(fs);
-			
-
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		//report folder - extent reports
-		//date
-		String reportFolder=pro.getProperty("REPORT_PATH");
+    	
+		 String reportFolder=prop.getProperty("REPORT_PATH");
     	 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
          FileFilterUtils filter = new FileFilterUtils();
          File folder =  new File(reportFolder);
